@@ -10,16 +10,30 @@ body{
     font-family: 'Roboto', sans-serif;
 
 }
+ul li{
+    list-style: none;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
 a{
     text-decoration: none;
+    color: white;
 
 }
 header{
     background-color: rgba(255, 255, 255, 0);
 }
-.navBar{
+#navBar{
     display: none;
 }
+
+#navBar.visible{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(36, 36, 36, 0.91);
+}
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -36,6 +50,7 @@ header{
     padding-top: 1rem;
     cursor: pointer;
 }
+
 .bean .bgImage{
     background-image: url(../img/jen-gunter-A4BBdJQu2co-unsplash.jpg), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     background-blend-mode: overlay;
